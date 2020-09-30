@@ -94,14 +94,26 @@ footer p {
 }
 
 .nav_list .list .list_text a {
-  font-size: 50px;
+  font-size: 3rem;
   display: none;
 }
 
+@media (max-width: 375px) {
+  .nav_list .list .list_text a {
+    font-size: 2.5rem;
+  }
+}
+
 .nav_list .list .list_text span {
-  font-size: 65px;
+  font-size: 4rem;
   font-style: italic;
   font-weight: 700;
+}
+
+@media (max-width: 375px) {
+  .nav_list .list .list_text span {
+    font-size: 2.5rem;
+  }
 }
 
 .nav_list .list .list_text li:hover > a {
@@ -117,11 +129,23 @@ footer p {
 }
 
 .nav_list .information .info_text {
-  font-size: 36px;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .nav_list .information .info_text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav_list .information .info_text {
+    font-size: 1.5rem;
+  }
 }
 
 .nav_list .information .info_icon {
-  width: 10vw;
+  width: 200px;
 }
 
 .nav_list .information .info_icon img {
