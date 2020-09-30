@@ -1,0 +1,122 @@
+@import 'mixin';
+@import 'var';
+@import 'shared';
+@import 'ham';
+
+.position-r{
+    position: relative;
+}
+h2{
+    color:#ff982b;
+    font-family: 'Merriweather', serif; 
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2vw;
+}
+
+.whatIsVegan{
+    width: 100%;
+    height: 100vh;
+    aside{
+        width: 38.2%;
+        height: 100%;
+        background-color: #fff;
+    }
+    article{
+        width: 61.8%;
+        height: 100%;
+        background-color: $bgColor-primary ;
+
+        background-image: url('../img/04_vegan/01_whatIs_bg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 5vw 20vh;  
+    }
+    .customContainer{
+        width: 50vw;
+        height: 100vh;
+        margin: 0 21vw 0 29vw;
+        position: absolute;
+        // border: 1px solid black;
+        .upperbox{
+            width: 20vw;
+        }
+        article{
+            color: #fff;
+            width: 25vw;
+        }
+        ul{
+            list-style: none;
+            color: #fff;
+            width: 25vw;
+            padding-bottom: 3rem;
+            line-height: 2rem;
+            li{
+                margin-bottom: 1rem;
+            }
+        } 
+    }
+}
+
+.goVegan{
+    background-color: $bgColor-primary;
+    width: 100%;
+    height: 50vh;
+    .customContainer{
+        width: 50vw;
+        height: 100%;
+        margin: 0 21vw 0 29vw;
+        .upperbox{
+            width: 25vw;
+            .goVegan_img{
+                width: 25vw;
+                position: absolute;
+                bottom: -150px;
+            }
+        }
+        article{
+            color: #fff;
+            width: 14vw;
+            .title{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.blank{
+    width: 100%;
+    height: 40vh;
+}
+
+.letLive{
+    background-color: $bgColor-primary;
+    width: 100vw;
+    height: 30vh;
+    .customContainer{
+        width: 50vw;
+        margin: 0 21vw 0 29vw;
+        position: absolute;
+        // border: 1px solid black;
+        img{
+            width: 15vw;
+            position: absolute;
+            left: 45%;
+            top: -80%;
+        }
+        article{
+            color: #fff;
+            width: 14vw;
+            .title{
+                font-size: 20px;
+                color: $bgColor-primary;
+                position: absolute;
+                top: -35%;
+                font-weight: bold;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初樹手作蔬食_菜單</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <!-- nav內容 -->
+    <nav>
+        <div class="nav_list">
+            <div class="container">
+                <div class="row">
+                    <div class="col list">
+                        <ul class="list_text">
+                            <li><a href="index.html">首頁</a><span>HOME</span></li>
+                            <li><a href="about.html">關於初樹</a><span>ABOUT</span></li>
+                            <li><a href="menu.html">菜單</a><span>MENU</span></li>
+                            <li><a href="vegan.html">純素主義</a><span>WHY VEGAN</span></li>
+                        </ul>
+                    </div>
+                    <div class="col information d-flex flex-column justify-content-end">
+                        <img class="nav_img align-self-end mb-3" src="img/00_nav/04_nav_img.png" alt="" srcset="">
+                        <div class="info_content">
+                            <table class="info_text">
+                                <tr>
+                                    <td class="text-center"><i class="fas fa-map-marker-alt"></i></td>
+                                    <td class="pl-3">台中市北區漢口路四段274號</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><i class="fas fa-mobile"></i></td>
+                                    <td class="pl-3">0918738696</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center"><i class="fas fa-clock"></i></td>
+                                    <td class="pl-3">07:30 ~ 13:15</td>
+                                </tr>
+                            </table>
+                            <div class="info_icon mt-3 d-flex justify-content-between">
+                                <a href="https://www.facebook.com/krshnaprema/" target="_blank" rel="noopener noreferrer"><img src="img/00_nav/05_nav_fb.png" alt="fb"></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/00_nav/05_nav_line.png" alt="fb"></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/00_nav/05_nav_ig.png" alt="fb"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 漢堡條 -->
+        <div class="nav_icon d-flex justify-content-lg-between">
+            <div class="ham"></div>
+            <a href="./menu.html" class="nav_logo" title="返回首頁"><img  src="img/00_nav/02_logo.png" height="50px" alt="logo" srcset=""></a>
+            
+        </div>
+    </nav>
+
+    <header class="d-flex justify-content-center">
+        <p class="header_text px-6">| 純 手 工 醬 料 ︱ 無 添 加 防 腐 劑 ︱ 堅 持 原 食 物 製 作 ︱ 守 護 地 球 ︱
+        </p>
+    </header>
+
+    <section class="menu_list py-5">
+        <div class="container">
+            <h3 class="menu_list_title mb-5">MENU</h3>
+        </div>
+        <!-- 手工麵包 -->
+        <div class="container mb-6">
+            <div class="menu_list_subtitle">
+                <img class="menu_list_img1" src="img/03_menu/02_subtitle01.png" alt="bread" srcset="">
+                <span class="subtitle_text">手工烘焙麵包</span>
+            </div>
+            <div class="menu_list_content mx-5 pt-4">
+                <div class="menu_list_subsubtitle">
+                    <div class="d-flex justify-content-between px-3">
+                        <p>三明治</p>
+                        <p>漢堡</p>
+                        <p>貝果</p>
+                    </div>
+                </div>
+                <div class="content_items d-md-block d-flex flex-wrap">
+                    <div class="content_item mt-3 px-3 d-none d-lg-block">九四文青</div>
+                    <a class="content_item mt-3 px-3 d-lg-none" data-toggle="modal" data-target="#Modal01">九四文青</a>
+                    <table class="content_detail d-none d-md-block">
+                        <tr>
+                            <td class="pr-5">青將雙騎士</td>
+                            <td>混搭雙種起士 - 堅果 - 蕃茄</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">青將鮮蔬</td>
+                            <td>蔬果總匯 - 堅果 - 葡萄乾</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">青青鬆鬆</td>
+                            <td>酥酥香鬆 - 小黃瓜 - 蘋果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">文青薯薯</td>
+                            <td>香草洋芋泥 - 堅果 - 蘋果 - 葡萄乾</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">文青愛呆丸</td>
+                            <td>新鮮地瓜泥 - 堅果 - 蘋果 - 蕃茄 </td>
+                        </tr>
+                    </table>
+                    <div class="content_item mt-3 px-3 d-none d-lg-block">優質澱粉</div>
+                    <a class="content_item mt-3 px-3 d-lg-none" data-toggle="modal" data-target="#Modal02">優質澱粉</a>
+                    <table class="content_detail d-none d-md-block">
+                        <tr>
+                            <td class="pr-5">堅果地瓜</td>
+                            <td>新鮮地瓜泥 - 堅果 - 蕃茄 - 蘋果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">塔塔地瓜</td>
+                            <td>黃芥末塔塔醬 - 新鮮地瓜泥 - 蘋果 - 蕃茄</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">藍葡堅泥</td>
+                            <td>香草洋芋泥 - 檸香美乃滋 - 堅果 - 葡萄乾</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">泥泥雙重奏 </td>
+                            <td>香草洋芋泥 v.s 新鮮地瓜泥 - 堅果 - 蕃茄</td>
+                        </tr>
+                    </table>
+                    <div class="content_item mt-3 px-3 d-none d-lg-block">香蕉大軍</div>
+                    <a class="content_item mt-3 px-3 d-lg-none" data-toggle="modal" data-target="#Modal03">香蕉大軍</a>
+                    <table class="content_detail d-none d-md-block">
+                        <tr>
+                            <td class="pr-5">蕉生巧克力</td>
+                            <td>香蕉 - 花生醬 - 巧克力醬</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">香蕉奇亞籽</td>
+                            <td>香蕉 - 健康奇亞籽 - 焦糖醬</td>
+                        </tr>
+                    </table>
+                    <div class="content_item mt-3 px-3 d-none d-lg-block">美乃唷唷</div>
+                    <a class="content_item mt-3 px-3 d-lg-none" data-toggle="modal" data-target="#Modal04">美乃唷唷</a>
+                    <table class="content_detail d-none d-md-block">
+                        <tr>
+                            <td class="pr-5">核平</td>
+                            <td>堅果 - 蘋果 - 起士 - 葡萄乾</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">黃金芥末</td>
+                            <td>蔬果總匯 - 堅果 - 特調黃芥末 - 酸黃瓜</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">放克輕鬆</td>
+                            <td>酥酥香鬆 - 小黃瓜 - 蘋果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">芝麻開門</td>
+                            <td>酥酥香鬆 - 黑金芝麻粉 - 蘋果 - 蕃茄</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">美乃黃綠紅</td>
+                            <td>香蕉 - 小黃瓜 - 蘋果 - 堅果</td>
+                        </tr>
+                    </table>
+                    <div class="content_item mt-3 px-3 d-none d-lg-block">白色巨塔</div>
+                    <a class="content_item mt-3 px-3 d-lg-none" data-toggle="modal" data-target="#Modal05">白色巨塔</a>
+                    <table class="content_detail d-none d-md-block">
+                        <tr>
+                            <td class="pr-5">蘋果乳酪　</td>
+                            <td>蘋果 - 綜合堅果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">堅葡乳酪</td>
+                            <td>葡萄乾 - 綜合堅果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">香蕉乳酪</td>
+                            <td>香蕉 - 焦糖醬</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">地瓜乳酪</td>
+                            <td>蘋果 - 手作地瓜泥 - 綜合堅果 - 美生菜</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">蔬果乳酪</td>
+                            <td>蘋果 - 小黃瓜 - 綜合堅果</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- 手工麵包modal -->
+        <div class="modal fade" id="Modal01" tabindex="-1" role="dialog" aria-labelledby="ModalLabel01" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel01">九四文青</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <table class="content_detail">
+                        <tr>
+                            <td class="pr-5">青將雙騎士</td>
+                            <td>混搭雙種起士 - 堅果 - 蕃茄</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">青將鮮蔬</td>
+                            <td>蔬果總匯 - 堅果 - 葡萄乾</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">青青鬆鬆</td>
+                            <td>酥酥香鬆 - 小黃瓜 - 蘋果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">文青薯薯</td>
+                            <td>香草洋芋泥 - 堅果 - 蘋果 - 葡萄乾</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">文青愛呆丸</td>
+                            <td>新鮮地瓜泥 - 堅果 - 蘋果 - 蕃茄 </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal02" tabindex="-1" role="dialog" aria-labelledby="ModalLabel02" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel02">優質澱粉</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <table class="content_detail">
+                        <tr>
+                            <td class="pr-5">堅果地瓜</td>
+                            <td>新鮮地瓜泥 - 堅果 - 蕃茄 - 蘋果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">塔塔地瓜</td>
+                            <td>黃芥末塔塔醬 - 新鮮地瓜泥 - 蘋果 - 蕃茄</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">藍葡堅泥</td>
+                            <td>香草洋芋泥 - 檸香美乃滋 - 堅果 - 葡萄乾</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">泥泥雙重奏 </td>
+                            <td>香草洋芋泥 v.s 新鮮地瓜泥 - 堅果 - 蕃茄</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal03" tabindex="-1" role="dialog" aria-labelledby="ModalLabel03" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel03">香蕉大軍</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <table class="content_detail">
+                        <tr>
+                            <td class="pr-5">蕉生巧克力</td>
+                            <td>香蕉 - 花生醬 - 巧克力醬</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">香蕉奇亞籽</td>
+                            <td>香蕉 - 健康奇亞籽 - 焦糖醬</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal04" tabindex="-1" role="dialog" aria-labelledby="ModalLabel04" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel04">美乃唷唷</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <table class="content_detail">
+                        <tr>
+                            <td class="pr-5">核平</td>
+                            <td>堅果 - 蘋果 - 起士 - 葡萄乾</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">黃金芥末</td>
+                            <td>蔬果總匯 - 堅果 - 特調黃芥末 - 酸黃瓜</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">放克輕鬆</td>
+                            <td>酥酥香鬆 - 小黃瓜 - 蘋果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">芝麻開門</td>
+                            <td>酥酥香鬆 - 黑金芝麻粉 - 蘋果 - 蕃茄</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">美乃黃綠紅</td>
+                            <td>香蕉 - 小黃瓜 - 蘋果 - 堅果</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Modal05" tabindex="-1" role="dialog" aria-labelledby="ModalLabel05" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel05">白色巨塔</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <table class="content_detail">
+                        <tr>
+                            <td class="pr-5">蘋果乳酪　</td>
+                            <td>蘋果 - 綜合堅果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">堅葡乳酪</td>
+                            <td>葡萄乾 - 綜合堅果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">香蕉乳酪</td>
+                            <td>香蕉 - 焦糖醬</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">地瓜乳酪</td>
+                            <td>蘋果 - 手作地瓜泥 - 綜合堅果 - 美生菜</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">蔬果乳酪</td>
+                            <td>蘋果 - 小黃瓜 - 綜合堅果</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- 健康飲品 -->
+        <div class="container mb-5">
+            <div class="menu_list_subtitle">
+                <img class="menu_list_img2" src="img/03_menu/02_subtitle02.png" alt="bread" srcset="">
+                <span class="subtitle_text">健康飲品</span>
+            </div>
+            <div class="row">
+                <div class="col-lg col12">
+                    <div class="menu_list_content mx-5 pt-4">
+                        <div class="menu_list_subsubtitle">
+                            <div class="d-flex justify-content-between px-3">
+                                <p>醒腦咖啡</p>
+                            </div>
+                        </div>
+                        <div class="content_items mt-3">
+                            <p class="content_detail2">義式黑咖啡</p>
+                            <p class="content_detail2">拿鐵</p>
+                            <p class="content_detail2">摩卡</p>
+                            <p class="content_detail2">芝麻拿鐵</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col12">
+                    <div class="menu_list_content mx-5 pt-4">
+                        <div class="menu_list_subsubtitle">
+                            <div class="d-flex justify-content-between px-3">
+                                <p>嚴選飲品</p>
+                            </div>
+                        </div>
+                        <div class="content_items mt-3">
+                            <p class="content_detail2">慢熬冬瓜茶</p>
+                            <p class="content_detail2">冬瓜奶奶</p>
+                            <p class="content_detail2">純可可</p>
+                            <p class="content_detail2">雙麻奶奶</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col12">
+                    <div class="menu_list_content mx-5 pt-4">
+                        <div class="menu_list_subsubtitle">
+                            <div class="d-flex justify-content-between px-3">
+                                <p>營養豆漿</p>
+                            </div>
+                        </div>
+                        <div class="content_items mt-3">
+                            <p class="content_detail2">經典原味豆漿</p>
+                            <p class="content_detail2">紅茶豆漿</p>
+                            <p class="content_detail2">可可豆漿</p>
+                            <p class="content_detail2">芝麻豆漿</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-lg-6">
+                <div class="col-lg col12">
+                    <div class="menu_list_content mx-5 pt-4">
+                        <div class="menu_list_subsubtitle">
+                            <div class="d-flex justify-content-between px-3">
+                                <p>有機茶</p>
+                            </div>
+                        </div>
+                        <div class="content_items mt-3">
+                            <p class="content_detail2">有機南非博士茶</p>
+                            <p class="content_detail2">有機南非博士豆漿</p>
+                            <p class="content_detail2">有機南非博士奶奶茶</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col12">
+                    <div class="menu_list_content mx-5 pt-4">
+                        <div class="menu_list_subsubtitle">
+                            <div class="d-flex justify-content-between px-3">
+                                <p>紅茶飲品</p>
+                            </div>
+                        </div>
+                        <div class="content_items mt-3">
+                            <p class="content_detail2">特級伯爵紅茶</p>
+                            <p class="content_detail2">伯爵紅茶拿鐵</p>
+                            <p class="content_detail2">可可紅茶拿鐵</p>
+                            <p class="content_detail2">亞麻仁紅茶拿鐵</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 創意捲餅 -->
+        <div class="container mb-5">
+            <div class="menu_list_subtitle">
+                <img class="menu_list_img2" src="img/03_menu/02_subtitle03.png" alt="bread" srcset="">
+                <span class="subtitle_text">創意捲餅</span>
+            </div>
+            <div class="menu_list_content mx-5 pt-4">
+                <div class="menu_list_subsubtitle">
+                    <div class="d-flex justify-content-between px-3">
+                        <p>獨家口味捲餅</p>
+                    </div>
+                </div>
+                <div class="content_items mt-3">
+                    <table class="content_detail2">
+                        <tr>
+                            <td class="pr-5">塔塔地瓜捲餅</td>
+                            <td class="d-none d-lg-block">金黃塔塔醬 - 新鮮地瓜 - 總匯鮮蔬</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">青醬總匯捲餅</td>
+                            <td class="d-none d-lg-block">蔬果總匯 -手工青醬 - 焙烤堅果</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">杏鮑菇總匯捲餅</td>
+                            <td class="d-none d-lg-block">蔬果總匯 - 檸香美乃滋 -香煎杏鮑菇</td>
+                        </tr>
+                        <tr>
+                            <td class="pr-5">打拋豬總匯捲餅</td>
+                            <td class="d-none d-lg-block">蔬果總匯 - 檸香美乃滋 - 獨家自製打拋醬</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- 彩虹沙拉 -->
+        <div class="container">
+            <div class="menu_list_subtitle">
+                <img class="menu_list_img2" src="img/03_menu/02_subtitle04.png" alt="bread" srcset="">
+                <span class="subtitle_text">彩虹沙拉</span>
+            </div>
+            <div class="menu_list_content mx-5 pt-4">
+                <div class="menu_list_subsubtitle">
+                    <div class="d-flex justify-content-between px-3">
+                        <p>美粒堅綜合果沙拉</p>
+                    </div>
+                </div>
+                <div class="content_items mt-3">
+                    <p class="content_detail2">奇亞籽-蔬果總匯 - 焙烤堅果</p>
+                    <p class="content_detail2">佐橄欖油醋醬or龍舌蘭黃金芥末醬</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper -->
+    <section class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/03_menu/03_menuSwiper_01.jpg" class="w-100" alt="" srcset="">
+                <p class="swiper-text">SANDWISH</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/03_menu/03_menuSwiper_02.jpg" class="w-100" alt="" srcset="">
+                <p class="swiper-text">BAGEL</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/03_menu/03_menuSwiper_03.jpg" class="w-100" alt="" srcset="">
+                <p class="swiper-text">HAMBURGER</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/03_menu/03_menuSwiper_04.jpg" class="w-100" alt="" srcset="">
+                <p class="swiper-text">BURRITO</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/03_menu/03_menuSwiper_05.jpg" class="w-100" alt="" srcset="">
+                <p class="swiper-text">DRINK</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/03_menu/03_menuSwiper_06.jpg" class="w-100" alt="" srcset="">
+                <p class="swiper-text">SOY MILK</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/03_menu/03_menuSwiper_07.jpg" class="w-100" alt="" srcset="">
+                <p class="swiper-text">SALAD</p>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Index -->
+        <div class="swiper-index">
+            <div class="inlineBox"><span class="swiper-index-text1">01</span></div>
+            <div class="inlineBox swiper-index-box1"><span class="swiper-index-text2">/<span
+                        class="swiper-index-text3">07</span></span></div>
+        </div>
+    </section>
+    <footer>
+        <p class="text-center py-3">©2015-2020  初樹手作蔬食TRUE SOUL <span>★此為學習作品 僅供練習使用★</span></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script>
+        ////nav選單漢堡條////
+        const ham = document.querySelector('.ham')
+        const navList = document.querySelector('.nav_list')
+
+        const offclick = (e) => {
+            navList.classList.toggle("active")
+            ham.classList.toggle("active")
+            document.removeEventListener('click', offclick)
+        }
+        const handclick = (e) => {
+            e.stopPropagation()
+            navList.classList.toggle("active")
+            ham.classList.toggle("active")
+            // if (navList.classList.contains("active")) {
+            //     document.addEventListener('click', offclick)
+            // }
+        }
+        ham.addEventListener('click', handclick)
+        ///nav選單漢堡條////
+        
+        
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            loop: true,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 135,
+                },
+            }
+        });
+        swiper.on('slideChange', function () {
+            var slide = document.querySelectorAll('.swiper-slide')
+            // console.log(swiper.activeIndex);
+            // console.log(slide[swiper.activeIndex].getAttribute('data-swiper-slide-index'));
+            var indexNum = slide[swiper.activeIndex].getAttribute('data-swiper-slide-index');
+            var numberText= parseInt(indexNum) + 1;
+            var indexText  = document.querySelector('.swiper-index-text1')
+            $(indexText).text("0" + numberText)
+        });
+
+        //Swiper Index
+        // var inputText =document.querySelector('.swiper-index-text1')
+        // var sliders = document.querySelectorAll('.swiper-slide')
+        // var indexs = document.querySelector('.swiper-slide-active')
+        // console.log(indexs.dataset.swiperSlideIndex);
+        // sliders.forEach(function(index){
+        //     let indexNums = document.querySelector('.swiper-slide.swiper-slide-active')
+        //     let indexNum = indexNums.dataset.swiperSlideIndex;
+        //     console.log(indexNum);
+        // });
+    </script>
+</body>
+
+</html>

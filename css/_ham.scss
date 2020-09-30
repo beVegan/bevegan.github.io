@@ -1,0 +1,84 @@
+//漢堡條
+.nav_icon{
+  position: fixed;
+  left:0;
+  top: 5vh;
+  padding: 0 5vw;
+  width: 100%;
+  z-index: 20;
+
+  .ham {
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/00_nav/01_hamBtn.png');
+    background-size: cover;
+    padding: 10px;
+  
+    &:hover{
+      cursor: pointer;
+    }
+    &.active {
+      background-image: url('../img/00_nav/01_close.png');
+    }
+  }
+}
+//nav選單
+.nav_list {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/00_nav/03_nav_bg.png');
+  background-size: cover;
+  display: none;
+  position: fixed;
+  z-index: 10;
+
+  color:$textTitle-primary;
+  font-family: 'Merriweather', serif;
+  
+  &.active {
+    display: block;
+  }
+  .container{
+    padding-top: 15vh;
+    padding-bottom: 22.5vh;
+    height: 100%;
+    .row{
+      height: 100%;
+    }
+  }
+  .list{  
+    .list_text{
+      list-style: none;
+      text-shadow: 3px 0 #000;
+      //中英文切換
+      a{
+        font-size: 50px;
+        display: none;
+      }
+      span{
+        font-size: 65px;
+        font-style: italic;
+        font-weight: 700;
+      }
+      li{
+        &:hover>a{display: block;}
+        &:hover>span{display: none;}
+      }
+    }   
+  }
+  .information{
+    // border: 1px solid black;
+    .nav_img{
+      width: 16vw;
+    }
+    .info_text{
+      font-size: 36px;
+    }
+    .info_icon{
+      width: 10vw;
+      img{
+        height: 50px;
+      }
+    }
+  }
+}

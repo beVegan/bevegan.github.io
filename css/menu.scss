@@ -1,0 +1,330 @@
+@import 'mixin';
+@import 'var';
+@import 'shared';
+@import 'ham';
+
+.inlineBox {
+    display: inline-block;
+}
+
+.mb-6 {
+    margin-bottom: 4rem;
+}
+
+.mx-lg-6 {
+    margin: 0 10rem;
+
+    @include sm-pc {
+        margin: -1rem;
+    }
+}
+.px-6{
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+
+.btn-primary {
+    background-color: $themeColor-primary;
+    border: 1px solid $themeColor-primary;
+    &:hover {
+        background-color: $themeColor-secondary;
+        border: 1px solid $themeColor-secondary;
+    }
+}
+
+//header
+header {
+    background-image: url('../img/03_menu/01_header.jpg');
+    padding: 20% 0;
+    background-size: cover;
+
+    .header_text {
+        display: inline;
+        background-color: rgba($color: #0B4043, $alpha: 0.9);
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 20px 20px;
+
+        @include pad {
+            font-size: 1rem;
+        }
+
+        @include mobile{
+            font-size: 0.8rem;
+        }
+
+        @include sm-mobile{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+//section1
+.menu_list {
+    .menu_list_title {
+        color: #BC4F07;
+    }
+
+    .menu_list_subtitle {
+        color: $themeColor-secondary;
+        font-size: 1.25rem;
+        font-weight: bold;
+        border-bottom: 2px solid $themeColor-secondary;
+        padding: 0 20px;
+
+        position: relative;
+
+        img {
+            width: 100px;
+            transform: rotate(-10deg);
+            position: absolute;
+        }
+
+        .menu_list_img1 {
+            bottom: -10px;
+        }
+
+        .menu_list_img2 {
+            bottom: -20px;
+        }
+
+        .subtitle_text {
+            padding-left: 120px;
+        }
+    }
+
+    .menu_list_content {
+        height: auto;
+        color: $themeColor-primary;
+
+        .menu_list_subsubtitle {
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-bottom: 2px solid$themeColor-primary;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .content_items {
+            font-size: 1.1rem;
+
+            a {
+                color: $themeColor-primary;
+
+                &:hover {
+                    color: #42322d;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+
+            .content_item {
+                font-weight: bold;
+
+
+            }
+
+            .content_detail {
+                margin-left: 6rem;
+            }
+
+            .content_detail2 {
+                margin-left: 1rem;
+            }
+
+            p {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+
+}
+
+
+//滑播圖
+.swiper-container {
+    background-color: #03444A;
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
+
+    .swiper-wrapper {
+        height: auto;
+
+        .swiper-slide {
+            height: auto;
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+
+            /* Center slide text vertically */
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            
+            img{
+                background-color: rgba(0, 0, 0, 0.6);
+                opacity: 0.3;
+                box-shadow: 10px 8px 10px rgb(41, 40, 40);
+            }
+            .swiper-text {
+                color: #888888;
+                font-size: 60px;
+                background-color: #03444A;
+                margin-bottom: 0;
+                width: 100%;
+                text-shadow: 5px 4px #000;
+                font-family: 'Merriweather', serif;
+                font-style: italic;
+                font-weight: 700;
+
+                @include sm-pc {
+                    font-size: 36px;
+                }
+
+                @include mobile {
+                    font-size: 24px !important;
+                }
+
+            }
+        }
+        .swiper-slide-active{
+            .swiper-text{
+                color: #E8B55B;
+            }
+            img{
+                opacity: 1; 
+            }
+        }
+    }
+
+}
+
+//進度球
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    width: auto;
+}
+
+.swiper-pagination {
+    left: 76.5% !important;
+    top: 33%;
+}
+
+.swiper-pagination-bullets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 16vh;
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: transparent;
+        border: 1px solid #E8B55B;
+    }
+}
+
+//索引號
+.swiper-index {
+    color:#E8B55B;
+    height: 80px;
+    position: absolute;
+    top: 45%;
+    left: 20.5%;
+    z-index: 10;
+
+    .swiper-index-text1 {
+        vertical-align: super;
+        font-size: 50px;
+        padding-top: 0;
+    }
+
+    .swiper-index-text2 {
+        font-size: 60px;
+        padding-top: 30px;
+    }
+
+    .swiper-index-text3 {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    .swiper-index-box1 {
+        height: 80;
+
+        position: absolute;
+        bottom: -10px;
+    }
+}
+
+//media query
+@media (max-width:1440px) {
+    .swiper-pagination {
+        left: 77% !important;
+    }
+
+    .swiper-index {
+        left: 19%;
+    }
+}
+
+@media (max-width:1140px) {
+    .swiper-pagination {
+        left: 77.5% !important;
+    }
+
+    .swiper-index {
+        left: 18%;
+    }
+}
+
+@media (max-width:960px) {
+    .swiper-pagination {
+        left: 78% !important;
+    }
+
+    .swiper-index {
+        left: 16%;
+    }
+}
+
+@media (max-width:800px) {
+    .swiper-pagination {
+        left: 79% !important;
+    }
+
+    .swiper-index {
+        left: 14%;
+    }
+}
+
+
+@media (max-width:768px) {
+    .swiper-pagination {
+        top: 20px;
+        left: 42% !important;
+    }
+
+    .swiper-pagination-bullets {
+        display: block;
+    }
+
+    .swiper-index {
+        display: none;
+    }
+
+    .swiper-text {
+        font-size: 30px !important;
+        bottom: -20% !important;
+        color: darkcyan;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初樹手作蔬食</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+<style>
+    html {
+
+        /* cursor: url(/團體專題/游標test.cur), pointer; */
+        overflow-y: hidden;
+        /*隱藏直式滾軸*/
+    }
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .colorbox:hover {
+        cursor: url(/團體專題/游標test2.cur), pointer;
+    } */
+
+    .banner {
+        position: relative;
+        background-image: url(img/01_home/首頁背景.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+
+
+    }
+
+    .colorbox {
+        width: 400px;
+        height: 500px;
+        background-color: rgba(5, 57, 63, 0.582);
+        position: absolute;
+        left: calc(50% - 185px);
+        top: calc(50% - 250px);
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    /* 按鈕 */
+    .btn-primary {
+        background-color: #FF8F4B;
+        border-color: #FF8F4B;
+    }
+
+    .btn-primary:hover {
+        background-color: #FF8F4B;
+        border-color: #FF8F4B;
+    }
+
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .show>.btn-primary.dropdown-toggle {
+        background-color: #FF8F4B;
+        border-color: #FF8F4B;
+    }
+
+    .btn-primary:focus {
+        background-color: #FF8F4B;
+        border-color: #FF8F4B;
+    }
+
+    .btn {
+        border-radius: 0;
+        font-size: 14px;
+        padding: 0.1rem 1.3rem
+    }
+
+    video {
+        mix-blend-mode: screen;
+    } /*    影片背景透明 */
+
+    .animate__animated.animate__fadeIn {
+        animation-delay: calc(var(--animate-delay)*5);
+        --animate-duration: 3s;
+    }
+
+    @media ( max-width: 576px) {        
+        .colorbox {
+            width: 300px;
+            height: 400px;        
+            left: calc(50% - 135px) ;
+            top: calc(50% - 200px);           
+        }
+    }
+
+
+
+   
+</style>
+
+<body>
+
+
+
+    <header>
+        <div class="banner">
+           
+
+            <div class="row colorbox">
+
+                <div class="col p-0 d-flex flex-column justify-content-center align-items-center">
+                    <video width="100%" autoplay="autoplay" muted="true">
+                        <source type="video/mp4" src="mp4/白色logo.mp4">
+                        </source>
+                    </video>
+                    <div class="text d-flex justify-content-center animate__animated animate__fadeIn"><img width="50%"
+                            src="img/01_home/手做文字.png" alt=""></div>
+                    <hr>
+                    <a class="btn btn-primary animate__animated animate__fadeIn" href="#" role="button">進入頁面</a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
