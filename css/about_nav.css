@@ -37,7 +37,13 @@ footer {
 
 footer p {
   margin-bottom: 0;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 3vw;
+  }
 }
 
 .nav_icon {

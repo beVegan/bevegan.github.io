@@ -34,6 +34,9 @@ footer{
   width: 100%;
   p{
       margin-bottom: 0;
-      font-size: 1.5vw;
+      font-size: 1.5rem;
+      @include pad{
+        font-size: 3vw;
+      }
   }
 }
