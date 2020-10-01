@@ -29,9 +29,11 @@ a {
 footer{
   background-color: $bgColor-primary;
   color: $textTitle-secondary;
-  margin-top: 1px;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  width: 100%;
   p{
       margin-bottom: 0;
-      font-size: 1vw;
+      font-size: 1.5vw;
   }
 }
