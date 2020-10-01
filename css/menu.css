@@ -30,12 +30,14 @@ a:hover {
 footer {
   background-color: #03444A;
   color: #ff8f4b;
-  margin-top: 1px;
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+  width: 100%;
 }
 
 footer p {
   margin-bottom: 0;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .nav_icon {
