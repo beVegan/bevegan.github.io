@@ -42,6 +42,14 @@
     padding-top: 15vh;
     padding-bottom: 22.5vh;
     height: 100%;
+    @include sm-pc{
+      padding-left: 10vw;
+      padding-right: 10vw;
+    }
+    @include pad{
+      padding-left: 2vw;
+      padding-right: 5vw;
+    }
     .row{
       height: 100%;
     }
@@ -77,19 +85,24 @@
     .nav_img{
       width: 16vw;
     }
-    .info_text{
-      font-size: 2rem;
-      @include pad{
-        font-size: 1.8rem;
+    .info_content{
+      @include sm-pc{
+        padding-left: 40px;
       }
-      @include sm-mobile{
-        font-size: 1.5rem;
+      .info_text{
+        font-size: 2rem;
+        @include pad{
+          font-size: 1.8rem;
+        }
+        @include sm-mobile{
+          font-size: 1.2rem;
+        }
       }
-    }
-    .info_icon{
-      width: 200px;
-      img{
-        height: 50px;
+      .info_icon{
+        width: 200px;
+        img{
+          height: 50px;
+        }
       }
     }
   }
