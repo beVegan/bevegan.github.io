@@ -133,7 +133,7 @@ footer p {
   font-weight: 700;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .nav_list .list .list_text span {
     font-size: 2.5rem;
   }
