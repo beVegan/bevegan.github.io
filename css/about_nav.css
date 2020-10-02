@@ -167,7 +167,7 @@ footer p {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .nav_list .information .info_content .info_text {
     font-size: 1.2rem;
   }
@@ -175,7 +175,7 @@ footer p {
 
 @media (max-width: 375px) {
   .nav_list .information .info_content .info_text {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 

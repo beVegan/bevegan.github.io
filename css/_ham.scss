@@ -94,11 +94,11 @@
         @include pad{
           font-size: 1.8rem;
         }
-        @include sm-mobile{
+        @include mobile{
           font-size: 1.2rem;
         }
         @include sm-mobile{
-          font-size: 0.8rem;
+          font-size: 1rem;
         }
       }
       .info_icon{
