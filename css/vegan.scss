@@ -11,7 +11,7 @@ h2{
     font-family: 'Merriweather', serif; 
     font-weight: 700;
     font-style: italic;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .whatIsVegan{
@@ -40,6 +40,9 @@ h2{
         // border: 1px solid black;
         .upperbox{
             width: 20vw;
+            .mainImg{
+                box-shadow: 5px 4px 5px #000;
+            }
         }
         article{
             color: #fff;
@@ -118,5 +121,71 @@ h2{
                 margin-bottom: 0;
             }
         }
+    }
+}
+
+.rwd_background{
+    width: 100%;
+    .firstLayer{
+        width: 100%;
+        height: 50vh;
+        background-color: #fff;
+        @media (max-width:320px) {
+            height: 30vh;
+        }
+    }
+    .secondLayer{
+        width: 100%;
+        height: 135vh;
+        background-color:$bgColor-primary;
+    }
+    .thirdLayer{
+        width: 100%;
+        height: 39vh;
+        background-color: #fff;
+        @media (max-width:320px) {
+            height: 25vh;
+        }
+    }
+    .lastLayer{
+        width: 100%;
+        width: 100%;
+        height: 80vh;
+        background-color:$bgColor-primary ;
+        @media (max-width:320px) {
+            height: 50vh;
+        }
+    }
+}
+
+.rwd_main{
+    position: absolute;
+    top: 15vh;
+    color: #eee;
+    .mainImg{
+        width: 70%;
+        box-shadow: 5px 4px 5px #000;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin-bottom: 1rem;
+        }
+    }
+    .goVegan_img_rwd{
+        width: 90%;
+    }
+    .title{
+        font-size: 1.25rem;
+        font-weight: bold;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .titleColor1{
+        color: $bgColor-primary;
+    }
+    .piggy_img_rwd{
+        width: 70%;
     }
 }
