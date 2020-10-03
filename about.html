@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>初樹手作蔬食_關於初樹</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- nav選單 -->
     <link rel="stylesheet" href="css/about_nav.css">
     <style>
@@ -17,49 +15,41 @@
             margin: 0;
             box-sizing: border-box;
         }
-
-        body {
+        /* body {
             height: 4500px;
-        }
-
+        } */
+        
         .banner {
             position: relative;
             width: 100%;
             height: 100vh;
             background-image: url(img/02_about/vegan.jpeg);
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
         }
-
+        
         .text-box {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
             height: 100%;
-
             font-size: 7vw;
             /* 隨解析度大小改變尺寸的單位 : vw */
             /* color: black; */
-
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: 'Chaparral Pro';
-
-
             background: radial-gradient(circle at var(--x, -40px) var(--y, -40px), green 30px, rgb(255, 255, 255, 0.85) 31px);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
             -webkit-text-fill-color: transparent;
             z-index: 2;
-
             cursor: none;
         }
-
-
-
+        
         .cursor {
             position: absolute;
             width: 60px;
@@ -70,27 +60,86 @@
             left: -40px;
             z-index: 1;
         }
-
-         @media (max-width: 992px){
-            .banner{
+        
+        @media (max-width: 992px) {
+            .banner {
                 background-size: cover;
             }
-
-            .text-box{
+            .text-box {
                 font-size: 17vw;
-                text-align: center;     
-                          
+                text-align: center;
+                cursor: unset;
             }
-
-            .cursor{
+            .cursor {
                 display: none;
             }
-           
         }
-
-
+        
+        .aboutbg {
+            background-color: #03444A;
+        }
+        
+        .ideabg {
+            width: 100%;
+            background-color: #03444A;
+            background-image: url(/img/02_about/idea.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 43%;
+            padding-bottom: 30%;
+        }
+        
+        .aboutcontent {
+            width: 100%;
+        }
+        
+        .ideacontent {
+            width: 100%;
+        }
+        
+        .textabout {
+            color: #FF982B;
+            font-size: 40pt;
+            display: flex;
+            justify-content: start;
+            font-weight: 600;
+            margin-left: 23%;
+            padding-top: 10%;
+        }
+        
+        .idearow01 {
+            color: #FF982B;
+            font-size: 40pt;
+            display: flex;
+            justify-content: start;
+            font-weight: 600;
+            margin-left: 10%;
+            padding-top: 13%;
+        }
+        
+        .abouttextcol {
+            font-size: 22px;
+            color: white;
+            line-height: 50px;
+            margin-top: 15%;
+            margin-left: 5%;
+        }
+        
+        .idearow02 {
+            font-size: 22px;
+            color: white;
+            line-height: 40px;
+        }
+        
+        .idearow03 {
+            font-size: 22px;
+            color: white;
+            line-height: 40px;
+            margin-left: 10%;
+        }
     </style>
 </head>
+
 <body>
     <nav>
         <div class="nav_list">
@@ -122,12 +171,9 @@
                                 </tr>
                             </table>
                             <div class="info_icon mt-3 d-flex justify-content-between">
-                                <a href="https://www.facebook.com/krshnaprema/" target="_blank"
-                                    rel="noopener noreferrer"><img src="img/00_nav/05_nav_fb.png" alt="fb"></a>
-                                <a href="#" target="_blank" rel="noopener noreferrer"><img
-                                        src="img/00_nav/05_nav_line.png" alt="fb"></a>
-                                <a href="#" target="_blank" rel="noopener noreferrer"><img
-                                        src="img/00_nav/05_nav_ig.png" alt="fb"></a>
+                                <a href="https://www.facebook.com/krshnaprema/" target="_blank" rel="noopener noreferrer"><img src="img/00_nav/05_nav_fb.png" alt="fb"></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/00_nav/05_nav_line.png" alt="fb"></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/00_nav/05_nav_ig.png" alt="fb"></a>
                             </div>
                         </div>
                     </div>
@@ -137,8 +183,7 @@
         <!-- 漢堡條 -->
         <div class="nav_icon d-flex justify-content-between">
             <div class="ham"></div>
-            <a href="./index.html" class="nav_logo" title="返回首頁"><img src="img/00_nav/02_logo.png" height="50px"
-                    alt="logo" srcset=""></a>
+            <a href="./index.html" class="nav_logo" title="返回首頁"><img src="img/00_nav/02_logo.png" height="50px" alt="logo" srcset=""></a>
 
         </div>
     </nav>
@@ -154,16 +199,52 @@
         </div>
 
     </header>
+    <!-- 內容 -->
+    <div class="container-fluid aboutbg p-0">
+        <div class="container aboutcontent">
+            <div class="row aboutrow ">
+                <div class="col aboutcol text-right ">
+                    <span class="textabout ">ABOUT</span>
+                    <br><br>
+                    <img width="400px" src="/img/02_about/about.png" alt=""></div>
+                <div class="col abouttextcol align-self-center">一段打工度假的冒險奇異旅程
+                    <br>造就一個嶄新的想法和全新的體驗<br>在農場的生活<br>平凡 卻充滿無限驚奇<br>平靜 卻能傾聽心底最深的聲音<br>平實 卻成為蛻變的開始~~~~
+                    <br>引出心中被塵封已久的靈魂<br>與內在強而有力的聲音震盪<br>已成為永久美好的生活方式 </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid ideabg">
+        <!-- <img width="40%" src="/img/02_about/idea.png" alt=""> -->
+        <div class="container ideacontent ">
+            <div class="row idearow01 ">IDEA</div>
+            <div class="row idearow02 justify-content-center">
+
+                從吃開始<br>大自然 食物 人<br>緊緊相連<br>人體藝術的極致由生命展現<br>大自然的極致源於食物
+            </div>
+
+
+
+            <div class="row idearow03">
+                初樹健康純植物飲食<br>用簡單的手法<br>呈現食物真實的原味<br>適度的調味只是錦上添花<br>卻不失食材本身特質<br>我們希望人們對吃進身體的食物<br>能有意識的去感受及享受<br>把充滿快樂能量的美食<br>傳遞給每個人
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <footer>
-        <p class="text-center">©2015-2020  初樹手作蔬食TRUE SOUL</p>
+        <p class="text-center">©2015-2020 初樹手作蔬食TRUE SOUL</p>
         <p class="text-center">★此為學習作品 僅供練習使用★</p>
     </footer>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
     <script>
-        
         ////nav選單漢堡條////
         const ham = document.querySelector('.ham')
         const navList = document.querySelector('.nav_list')
@@ -177,19 +258,19 @@
             e.stopPropagation()
             navList.classList.toggle("active")
             ham.classList.toggle("active")
-            // if (navList.classList.contains("active")) {
-            //     document.addEventListener('click', offclick)
-            // }
+                // if (navList.classList.contains("active")) {
+                //     document.addEventListener('click', offclick)
+                // }
         }
         ham.addEventListener('click', handclick)
-        ///nav選單漢堡條////
+            ///nav選單漢堡條////
 
         ///滑鼠效果///
         var h = document.querySelector('.text-box');
         var p = h.getBoundingClientRect();
         var c = document.querySelector('.cursor');
 
-        document.body.onmousemove = function (e) {
+        document.body.onmousemove = function(e) {
             /*Adjust the position of the cursor*/
             c.style.left = e.clientX - 30 + 'px';
             c.style.top = e.clientY - 30 + 'px';
@@ -197,7 +278,6 @@
             h.style.setProperty('--x', (e.clientX - p.top) + 'px');
             h.style.setProperty('--y', (e.clientY - p.left) + 'px');
         }
-
     </script>
 </body>
 
