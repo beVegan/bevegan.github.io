@@ -15,9 +15,6 @@
             margin: 0;
             box-sizing: border-box;
         }
-        /* body {
-            height: 4500px;
-        } */
         
         .banner {
             position: relative;
@@ -73,7 +70,16 @@
             .cursor {
                 display: none;
             }
+            .text-box {
+                background: none;
+                background-clip: none;
+                -webkit-background-clip: none;
+                -webkit-text-fill-color: rgba(255, 253, 253, 0.849);
+                z-index: 2;
+                cursor: auto;
+            }
         }
+        /* 內容*/
         
         .aboutbg {
             background-color: #03444A;
@@ -136,6 +142,39 @@
             color: white;
             line-height: 40px;
             margin-left: 10%;
+        }
+        
+        @media(max-width:576px) {
+            .ideabg {
+                background-position: bottom right;
+                padding-bottom: 50%;
+            }
+            .aboutcol {
+                text-align: center!important;
+            }
+            .textabout {
+                display: flex;
+                justify-content: center;
+                font-weight: 600;
+                margin-left: 0%;
+                padding-top: 10%;
+            }
+            .abouttextcol {
+                display: flex;
+                justify-content: center;
+            }
+            .idearow01 {
+                display: flex;
+                justify-content: center;
+                margin-left: 0%;
+                padding-bottom: 13%;
+            }
+            .idearow03 {
+                margin-left: 0%;
+                display: flex;
+                justify-content: center;
+                margin-left: 30px;
+            }
         }
     </style>
 </head>
@@ -226,7 +265,7 @@
             </div>
 
 
-
+            <br><br>
             <div class="row idearow03">
                 初樹健康純植物飲食<br>用簡單的手法<br>呈現食物真實的原味<br>適度的調味只是錦上添花<br>卻不失食材本身特質<br>我們希望人們對吃進身體的食物<br>能有意識的去感受及享受<br>把充滿快樂能量的美食<br>傳遞給每個人
             </div>
