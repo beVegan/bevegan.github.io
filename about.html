@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- nav選單 -->
     <link rel="stylesheet" href="css/about_nav.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         * {
             margin: 0;
@@ -23,6 +25,12 @@
             background-image: url(img/02_about/vegan.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
+        }
+        
+        .scorlltab {
+            position: absolute;
+            bottom: 0;
+            left: 46%;
         }
         
         .text-box {
@@ -144,7 +152,7 @@
             margin-left: 10%;
         }
         
-        @media(max-width:576px) {
+        @media(max-width:768px) {
             .ideabg {
                 background-position: bottom right;
                 padding-bottom: 50%;
@@ -175,6 +183,13 @@
                 justify-content: center;
                 margin-left: 30px;
             }
+            .aboutimg {
+                width: 300px;
+            }
+        }
+        
+        .animate__animated.animate__fadeInDown {
+            --animate-duration: 1.5s;
         }
     </style>
 </head>
@@ -232,6 +247,9 @@
             <!-- <img width="100%" class="container-fluid p-0" src="img/02_about/vegan.jpeg" alt=""> -->
             <div class="text-box">
                 <div class="text font-weight-normal font-italic">100% PLANT -BASED</div>
+                <div class="scorlltab animate__animated animate__fadeInDown animate__infinite animate__slow ">
+                    <a href="#about"><img src="/img/02_about/scrolltab.png"></a>
+                </div>
             </div>
 
             <span class="cursor"></span>
@@ -242,10 +260,10 @@
     <div class="container-fluid aboutbg p-0">
         <div class="container aboutcontent">
             <div class="row aboutrow ">
-                <div class="col aboutcol text-right ">
+                <div id="about" class="col aboutcol text-right ">
                     <span class="textabout ">ABOUT</span>
                     <br><br>
-                    <img width="400px" src="/img/02_about/about.png" alt=""></div>
+                    <img class="aboutimg" width="400px" src="/img/02_about/about.png" alt=""></div>
                 <div class="col abouttextcol align-self-center">一段打工度假的冒險奇異旅程
                     <br>造就一個嶄新的想法和全新的體驗<br>在農場的生活<br>平凡 卻充滿無限驚奇<br>平靜 卻能傾聽心底最深的聲音<br>平實 卻成為蛻變的開始~~~~
                     <br>引出心中被塵封已久的靈魂<br>與內在強而有力的聲音震盪<br>已成為永久美好的生活方式 </div>
