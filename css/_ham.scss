@@ -13,12 +13,21 @@
     background-image: url('../img/00_nav/01_hamBtn.png');
     background-size: cover;
     padding: 10px;
-  
+    @include sm-pc{
+      width: 32px;
+      height: 32px; 
+    }
     &:hover{
       cursor: pointer;
     }
     &.active {
       background-image: url('../img/00_nav/01_close.png');
+    }
+  }
+  .nav_logo_img{
+    height: 50px;
+    @include sm-pc{
+      height: 32px;
     }
   }
 }
@@ -40,7 +49,7 @@
   }
   .container{
     padding-top: 15vh;
-    padding-bottom: 22.5vh;
+    padding-bottom: 20vh;
     height: 100%;
     @include sm-pc{
       padding-left: 10vw;
@@ -91,6 +100,7 @@
       }
       .info_text{
         font-size: 2rem;
+        line-height: 4rem;
         @include pad{
           font-size: 1.8rem;
         }
@@ -103,8 +113,14 @@
       }
       .info_icon{
         width: 200px;
+        @include sm-pc{
+          width: 150px;
+        }
         img{
           height: 50px;
+          @include sm-pc{
+            height: 36px;
+          }
         }
       }
     }

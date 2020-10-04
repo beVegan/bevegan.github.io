@@ -30,7 +30,7 @@ a:hover {
 footer {
   background-color: #03444A;
   color: #ff8f4b;
-  padding-top: 15vh;
+  padding-top: 8vh;
   padding-bottom: 1rem;
   width: 100%;
 }
@@ -63,12 +63,29 @@ footer p {
   padding: 10px;
 }
 
+@media (max-width: 992px) {
+  .nav_icon .ham {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .nav_icon .ham:hover {
   cursor: pointer;
 }
 
 .nav_icon .ham.active {
   background-image: url("../img/00_nav/01_close.png");
+}
+
+.nav_icon .nav_logo_img {
+  height: 50px;
+}
+
+@media (max-width: 992px) {
+  .nav_icon .nav_logo_img {
+    height: 32px;
+  }
 }
 
 .nav_list {
@@ -89,7 +106,7 @@ footer p {
 
 .nav_list .container {
   padding-top: 15vh;
-  padding-bottom: 22.5vh;
+  padding-bottom: 20vh;
   height: 100%;
 }
 
@@ -159,6 +176,7 @@ footer p {
 
 .nav_list .information .info_content .info_text {
   font-size: 2rem;
+  line-height: 4rem;
 }
 
 @media (max-width: 768px) {
@@ -183,8 +201,20 @@ footer p {
   width: 200px;
 }
 
+@media (max-width: 992px) {
+  .nav_list .information .info_content .info_icon {
+    width: 150px;
+  }
+}
+
 .nav_list .information .info_content .info_icon img {
   height: 50px;
+}
+
+@media (max-width: 992px) {
+  .nav_list .information .info_content .info_icon img {
+    height: 36px;
+  }
 }
 
 .inlineBox {
