@@ -126,54 +126,93 @@ h2{
 
 .rwd_background{
     width: 100%;
+    color: #eee;
     .firstLayer{
+        height: 120vh; 
         width: 100%;
-        height: 50vh;
-        background-color: #fff;
+        background-color: $bgColor-primary;
+        @media (max-width:768px) {
+            height: 90vh;
+        }
         @media (max-width:320px) {
-            height: 30vh;
+            height: 40vh;
+        }
+        .firstLayer_bg_top{
+            background-color: #fff;
+            width: 100%;
+            height: 70%;
+        }
+        .firstLayer_bg_bottom{
+            background-color: $bgColor-primary;
+            width: 100%;
+            height: 30%;
+        }
+
+        .mainImg{
+            position: absolute;
+            margin-top: 8rem;          
+            width: 70%;
+            box-shadow: 5px 4px 5px #000;
         }
     }
     .secondLayer{
         width: 100%;
-        height: 135vh;
         background-color:$bgColor-primary;
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 1rem;
+            }
+        }
     }
     .thirdLayer{
         width: 100%;
-        height: 39vh;
+        height: 80vh;
         background-color: #fff;
+        @media (max-width:768px) {
+            height: 60vh;
+        }
         @media (max-width:320px) {
             height: 25vh;
+        }
+        .thirdLayer_bg_top{
+            background-color:$bgColor-primary ;
+            width: 100%;
+            height: 50%;
+        }
+        .thirdLayer_bg_bottom{
+            background-color:#fff ;
+            width: 100%;
+            height: 50%;
+        }
+        .goVegan_img_rwd{
+            position: absolute;
+            width: 90%;
+            margin: auto;
+            display: block;
+        }
+        
+    }
+    .fourthLayer{
+        background-color: #fff;
+        .titleColor1{
+            color: $bgColor-primary;
         }
     }
     .lastLayer{
         width: 100%;
         width: 100%;
-        height: 80vh;
+        height: 75vh;
         background-color:$bgColor-primary ;
+        @media (max-width:768px) {
+            height: 62vh;
+        }
         @media (max-width:320px) {
-            height: 50vh;
+            height: 36vh;
         }
-    }
-}
-
-.rwd_main{
-    position: absolute;
-    top: 15vh;
-    color: #eee;
-    .mainImg{
-        width: 70%;
-        box-shadow: 5px 4px 5px #000;
-    }
-    ul{
-        list-style: none;
-        li{
-            margin-bottom: 1rem;
+        .piggy_img_rwd{
+            width: 50%;
         }
-    }
-    .goVegan_img_rwd{
-        width: 90%;
     }
     .title{
         font-size: 1.25rem;
@@ -181,11 +220,5 @@ h2{
         p{
             margin-bottom: 0;
         }
-    }
-    .titleColor1{
-        color: $bgColor-primary;
-    }
-    .piggy_img_rwd{
-        width: 70%;
     }
 }

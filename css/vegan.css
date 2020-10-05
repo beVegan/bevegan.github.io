@@ -357,30 +357,70 @@ h2 {
 
 .rwd_background {
   width: 100%;
+  color: #eee;
 }
 
 .rwd_background .firstLayer {
+  height: 120vh;
   width: 100%;
-  height: 50vh;
-  background-color: #fff;
+  background-color: #03444A;
+}
+
+@media (max-width: 768px) {
+  .rwd_background .firstLayer {
+    height: 90vh;
+  }
 }
 
 @media (max-width: 320px) {
   .rwd_background .firstLayer {
-    height: 30vh;
+    height: 40vh;
   }
+}
+
+.rwd_background .firstLayer .firstLayer_bg_top {
+  background-color: #fff;
+  width: 100%;
+  height: 70%;
+}
+
+.rwd_background .firstLayer .firstLayer_bg_bottom {
+  background-color: #03444A;
+  width: 100%;
+  height: 30%;
+}
+
+.rwd_background .firstLayer .mainImg {
+  position: absolute;
+  margin-top: 8rem;
+  width: 70%;
+  -webkit-box-shadow: 5px 4px 5px #000;
+          box-shadow: 5px 4px 5px #000;
 }
 
 .rwd_background .secondLayer {
   width: 100%;
-  height: 135vh;
   background-color: #03444A;
+}
+
+.rwd_background .secondLayer ul {
+  list-style: none;
+}
+
+.rwd_background .secondLayer ul li {
+  margin-bottom: 1rem;
 }
 
 .rwd_background .thirdLayer {
   width: 100%;
-  height: 39vh;
+  height: 80vh;
   background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .rwd_background .thirdLayer {
+    height: 60vh;
+  }
 }
 
 @media (max-width: 320px) {
@@ -389,57 +429,62 @@ h2 {
   }
 }
 
+.rwd_background .thirdLayer .thirdLayer_bg_top {
+  background-color: #03444A;
+  width: 100%;
+  height: 50%;
+}
+
+.rwd_background .thirdLayer .thirdLayer_bg_bottom {
+  background-color: #fff;
+  width: 100%;
+  height: 50%;
+}
+
+.rwd_background .thirdLayer .goVegan_img_rwd {
+  position: absolute;
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.rwd_background .fourthLayer {
+  background-color: #fff;
+}
+
+.rwd_background .fourthLayer .titleColor1 {
+  color: #03444A;
+}
+
 .rwd_background .lastLayer {
   width: 100%;
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   background-color: #03444A;
+}
+
+@media (max-width: 768px) {
+  .rwd_background .lastLayer {
+    height: 62vh;
+  }
 }
 
 @media (max-width: 320px) {
   .rwd_background .lastLayer {
-    height: 50vh;
+    height: 36vh;
   }
 }
 
-.rwd_main {
-  position: absolute;
-  top: 15vh;
-  color: #eee;
+.rwd_background .lastLayer .piggy_img_rwd {
+  width: 50%;
 }
 
-.rwd_main .mainImg {
-  width: 70%;
-  -webkit-box-shadow: 5px 4px 5px #000;
-          box-shadow: 5px 4px 5px #000;
-}
-
-.rwd_main ul {
-  list-style: none;
-}
-
-.rwd_main ul li {
-  margin-bottom: 1rem;
-}
-
-.rwd_main .goVegan_img_rwd {
-  width: 90%;
-}
-
-.rwd_main .title {
+.rwd_background .title {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
-.rwd_main .title p {
+.rwd_background .title p {
   margin-bottom: 0;
-}
-
-.rwd_main .titleColor1 {
-  color: #03444A;
-}
-
-.rwd_main .piggy_img_rwd {
-  width: 70%;
 }
 /*# sourceMappingURL=vegan.css.map */
