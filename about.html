@@ -32,6 +32,17 @@
             bottom: 0;
             left: 46%;
         }
+        .scorllgreen{
+            display: none;
+        }
+
+        .scorlltab:hover>.scorllgreen{
+            display:block;        
+        }
+
+        .scorlltab:hover>.scorllwhite{
+            display:none;        
+        }
         
         .text-box {
             position: absolute;
@@ -119,6 +130,7 @@
             font-weight: 600;
             margin-left: 23%;
             padding-top: 10%;
+            font-family: 'Merriweather', serif;
         }
         
         .idearow01 {
@@ -129,6 +141,7 @@
             font-weight: 600;
             margin-left: 10%;
             padding-top: 13%;
+            font-family: 'Merriweather', serif;
         }
         
         .abouttextcol {
@@ -157,7 +170,7 @@
             font-weight: 600;
         }
         
-        @media(max-width:768px) {
+        @media(max-width:1024px) {
             .ideabg {
                 background-position: bottom right;
                 padding-bottom: 50%;
@@ -257,7 +270,8 @@
                 <div class="text font-weight-normal font-italic">100% PLANT -BASED</div>
                 <!--箭頭 -->
                 <div class="scorlltab animate__animated animate__fadeInDown animate__slow ">
-                    <a href="#about"><img src="img/02_about/scrolltab.png"></a>
+                    <a class="scorllwhite" href="#about"><img src="img/02_about/scrolltab.png"></a>
+                    <a class="scorllgreen" href="#about"><img src="img/02_about/scrolltabgreen.png"></a>
                 </div>
             </div>
 
@@ -270,7 +284,7 @@
         <div class="container aboutcontent">
             <div class="row aboutrow ">
                 <div id="about" class="col aboutcol text-right ">
-                    <span class="textabout ">ABOUT</span>
+                    <span class="textabout "><i>ABOUT</i></span>
                     <br><br>
                     <img class="aboutimg" width="400px" src="img/02_about/about.png" alt=""></div>
                 <div class="col abouttextcol align-self-center">一段打工度假的冒險奇異旅程
@@ -285,7 +299,7 @@
     <div class="container-fluid ideabg">
         <!-- <img width="40%" src="/img/02_about/idea.png" alt=""> -->
         <div class="container ideacontent ">
-            <div class="row idearow01 ">IDEA</div>
+            <div class="row idearow01 "><i>IDEA</i></div>
             <div class="row idearow02 justify-content-center align-items-center">
                 <div class="align-self-center">
                     <p><span class="idea02title">從吃開始</span>
