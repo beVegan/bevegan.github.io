@@ -235,13 +235,13 @@ h2 {
 }
 
 .whatIsVegan aside {
-  width: 38.2%;
+  width: 34.5%;
   height: 100%;
   background-color: #fff;
 }
 
 .whatIsVegan article {
-  width: 61.8%;
+  width: 65.5%;
   height: 100%;
   background-color: #03444A;
   background-image: url("../img/04_vegan/01_whatIs_bg.png");
@@ -251,9 +251,9 @@ h2 {
 }
 
 .whatIsVegan .customContainer {
-  width: 50vw;
+  width: 46vw;
   height: 100vh;
-  margin: 0 21vw 0 29vw;
+  margin: 0 27vw 0 27vw;
   position: absolute;
 }
 
@@ -290,9 +290,9 @@ h2 {
 }
 
 .goVegan .customContainer {
-  width: 50vw;
+  width: 46vw;
   height: 100%;
-  margin: 0 21vw 0 29vw;
+  margin: 0 27vw 0 27vw;
 }
 
 .goVegan .customContainer .upperbox {
@@ -307,11 +307,15 @@ h2 {
 
 .goVegan .customContainer article {
   color: #fff;
-  width: 14vw;
+  width: 20rem;
 }
 
 .goVegan .customContainer article .title {
   font-size: 20px;
+}
+
+.content {
+  line-height: 2rem;
 }
 
 .blank {
@@ -322,37 +326,37 @@ h2 {
 .letLive {
   background-color: #03444A;
   width: 100vw;
-  height: 30vh;
+  height: 43vh;
 }
 
 .letLive .customContainer {
-  width: 50vw;
-  margin: 0 21vw 0 29vw;
-  position: absolute;
+  width: 46vw;
+  margin: 0 27vw 0 27vw;
 }
 
 .letLive .customContainer img {
-  width: 15vw;
+  width: 22.5vw;
   position: absolute;
-  left: 45%;
-  top: -80%;
+  left: 50%;
+  top: -45%;
 }
 
 .letLive .customContainer article {
   color: #fff;
-  width: 14vw;
+  width: 14rem;
 }
 
 .letLive .customContainer article .title {
   font-size: 20px;
   color: #03444A;
   position: absolute;
-  top: -35%;
+  top: -16%;
   font-weight: bold;
 }
 
 .letLive .customContainer article p {
   margin-bottom: 0;
+  width: 100%;
 }
 
 .rwd_background {
@@ -458,21 +462,7 @@ h2 {
 
 .rwd_background .lastLayer {
   width: 100%;
-  width: 100%;
-  height: 75vh;
   background-color: #03444A;
-}
-
-@media (max-width: 768px) {
-  .rwd_background .lastLayer {
-    height: 62vh;
-  }
-}
-
-@media (max-width: 320px) {
-  .rwd_background .lastLayer {
-    height: 36vh;
-  }
 }
 
 .rwd_background .lastLayer .piggy_img_rwd {
