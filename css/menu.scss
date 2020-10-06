@@ -18,7 +18,8 @@
         margin: -1rem;
     }
 }
-.px-6{
+
+.px-6 {
     padding-left: 4rem !important;
     padding-right: 4rem !important;
 }
@@ -26,6 +27,7 @@
 .btn-primary {
     background-color: $themeColor-primary;
     border: 1px solid $themeColor-primary;
+
     &:hover {
         background-color: $themeColor-secondary;
         border: 1px solid $themeColor-secondary;
@@ -49,11 +51,11 @@ header {
             font-size: 1rem;
         }
 
-        @include mobile{
+        @include mobile {
             font-size: 0.8rem;
         }
 
-        @include sm-mobile{
+        @include sm-mobile {
             font-size: 0.9rem;
         }
     }
@@ -62,12 +64,16 @@ header {
 //section1
 .menu_list {
     .menu_list_title {
-        color: #BC4F07;
+        color: #ff982b;
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 2rem;
     }
 
     .menu_list_subtitle {
         color: $themeColor-secondary;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: bold;
         border-bottom: 2px solid $themeColor-secondary;
         padding: 0 20px;
@@ -147,7 +153,7 @@ header {
 //滑播圖
 .swiper-container {
     background-color: #03444A;
-    padding-top: 100px;
+    padding-top: 12vh;
     width: 100%;
     height: auto;
 
@@ -164,12 +170,13 @@ header {
             // display: flex;
             // justify-content: center;
             // align-items: center;
-            
-            img{
+
+            img {
                 background-color: rgba(0, 0, 0, 0.6);
                 opacity: 0.3;
                 box-shadow: 10px 8px 10px rgb(41, 40, 40);
             }
+
             .swiper-text {
                 color: #888888;
                 font-size: 60px;
@@ -191,12 +198,14 @@ header {
 
             }
         }
-        .swiper-slide-active{
-            .swiper-text{
+
+        .swiper-slide-active {
+            .swiper-text {
                 color: #E8B55B;
             }
-            img{
-                opacity: 1; 
+
+            img {
+                opacity: 1;
             }
         }
     }
@@ -211,8 +220,8 @@ header {
 }
 
 .swiper-pagination {
-    left: 76.5% !important;
-    top: 33%;
+    left: 76.25% !important;
+    top: 40%;
 }
 
 .swiper-pagination-bullets {
@@ -235,7 +244,7 @@ header {
 
 //索引號
 .swiper-index {
-    color:#E8B55B;
+    color: #E8B55B;
     height: 80px;
     position: absolute;
     top: 45%;
@@ -280,6 +289,7 @@ header {
 @media (max-width:1140px) {
     .swiper-pagination {
         left: 77.5% !important;
+        top: 35%;
     }
 
     .swiper-index {
@@ -310,7 +320,7 @@ header {
 
 @media (max-width:768px) {
     .swiper-pagination {
-        top: 20px;
+        top: 13.5%;
         left: 42% !important;
     }
 
@@ -326,5 +336,19 @@ header {
         font-size: 30px !important;
         bottom: -20% !important;
         color: darkcyan;
+    }
+}
+
+@media (max-width:576px) {
+    .swiper-pagination {
+        top: 13.5%;
+        left: 39% !important;
+    }
+}
+
+@media (max-width:375px) {
+    .swiper-pagination {
+        top: 13.5%;
+        left: 33% !important;
     }
 }

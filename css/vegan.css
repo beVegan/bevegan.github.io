@@ -30,9 +30,15 @@ a:hover {
 footer {
   background-color: #03444A;
   color: #ff8f4b;
-  padding-top: 8vh;
+  padding-top: 15vh;
   padding-bottom: 1rem;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding-top: 10vh;
+  }
 }
 
 footer p {
