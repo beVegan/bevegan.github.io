@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/about_nav.css">
     <!-- animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -176,6 +178,10 @@
             font-size: 32px;
             font-weight: 600;
         }
+
+        .aboutimg:hover{
+            filter:drop-shadow(0px 0px 10px rgba(0,0,0,.5));
+            }
         
         @media(max-width:1024px) {
             .ideabg {
@@ -211,6 +217,7 @@
             .aboutimg {
                 width: 300px;
             }
+            
             .scorlltab {
                 left: 42%;
             }
@@ -290,8 +297,10 @@
     <div class="container-fluid aboutbg p-0">
         <div class="container aboutcontent">
             <div class="row aboutrow ">
-                <div id="about" class="col aboutcol text-right ">
-                    <span class="textabout "><i>ABOUT</i></span>
+                <div  id="about" class="col aboutcol text-right ">
+                    <span data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" class="textabout "><i>ABOUT</i></span>
                     <br><br>
                     <img class="aboutimg" width="400px" src="img/02_about/about.png" alt=""></div>
                 <div class="col abouttextcol align-self-center">一段打工度假的冒險奇異旅程
@@ -306,7 +315,9 @@
     <div class="container-fluid ideabg">
         <!-- <img width="40%" src="/img/02_about/idea.png" alt=""> -->
         <div class="container ideacontent ">
-            <div class="row idearow01 "><i>IDEA</i></div>
+            <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" data-aos-delay="500" class="row idearow01 "><i>IDEA</i></div>
             <div class="row idearow02 justify-content-center align-items-center">
                 <div class="align-self-center">
                     <p><span class="idea02title">從吃開始</span>
@@ -331,7 +342,7 @@
         <p class="text-center">©2015-2020  初樹手作蔬食TRUE SOUL<span class="d-none d-lg-inline-block">　★此為學習作品 僅供練習使用★</span></p>
         <p class="text-center d-lg-none">★此為學習作品 僅供練習使用★</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script>
@@ -369,6 +380,9 @@
             h.style.setProperty('--y', (e.clientY - p.left) + 'px');
         }
     </script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
